@@ -87,6 +87,10 @@ img{max-width:100%;display:block}
 .contactline a{color:var(--ink);border-bottom:1px solid var(--line)}
 .contactline a:hover{border-color:var(--navy);text-decoration:none}
 .sep{color:var(--line);margin:0 12px}
+.resume-cta{display:inline-flex;align-items:center;gap:8px;margin-top:22px;font-family:"Archivo",sans-serif;font-weight:600;font-size:14.5px;letter-spacing:.01em;background:var(--accent);color:#3a2400;border-radius:8px;padding:11px 20px;transition:transform .15s ease,box-shadow .2s ease}
+.resume-cta:hover{transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(246,157,29,.55);text-decoration:none}
+.resume-cta .arr{transition:transform .2s ease}
+.resume-cta:hover .arr{transform:translateX(3px)}
 
 /* ---------- generic section ---------- */
 section{padding:84px 0}
@@ -224,6 +228,7 @@ section{padding:84px 0}
       <div class="note-to">
         <strong>For the WECA team:</strong> you asked for samples that show my marketing, communications, digital, and content work. Rather than send a folder of files, I built them into a single page, on the theory that the work should speak for itself. Below is a selection, with the channel and audience noted for each.
       </div>
+      <a class="resume-cta" href="resume.html">View my resume <span class="arr">&rarr;</span></a>
     </aside>
   </div>
 </header>
