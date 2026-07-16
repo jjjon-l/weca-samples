@@ -1,0 +1,437 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jonathan Lass — Work Samples for WECA</title>
+<meta name="description" content="Marketing, communications, digital, and content work samples and portfolio for the WECA Senior Manager, Marketing, Communications & Growth role." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   BRAND COLORS
+   A professional navy with a true-red accent. Swap the values below
+   to match WECA's palette if desired.
+   ============================================================ */
+:root{
+  --paper:#FBF8F2;        /* warm off-white background */
+  --ink:#1E2A44;          /* deep navy-charcoal text */
+  --navy:#1E3364;         /* primary navy */
+  --navy-deep:#152449;    /* darker navy for depth */
+  --accent:#C8102E;       /* true red accent, used only on light sections */
+  --muted:#5B6478;        /* secondary text */
+  --line:#EAE4D8;         /* hairline rules */
+  --card:#FFFFFF;         /* card surface */
+  --maxw:1080px;
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:"Newsreader",Georgia,serif;
+  font-size:19px;
+  line-height:1.6;
+  text-wrap:pretty;
+  -webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.display,.eyebrow{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;}
+h1,h2,h3,.lede,.big{text-wrap:balance;}
+a{color:var(--navy);text-decoration:none}
+a:hover{text-decoration:underline}
+img{max-width:100%;display:block}
+
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+/* ---------- top bar ---------- */
+.topbar{
+  position:sticky;top:0;z-index:50;
+  background:rgba(251,248,242,.86);
+  backdrop-filter:saturate(140%) blur(8px);
+  border-bottom:1px solid var(--line);
+}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:58px;padding-top:11px;padding-bottom:11px}
+.brand-block{display:flex;flex-direction:column;gap:3px}
+.brandmark{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.01em;font-size:16px}
+.brandmark span{color:var(--accent)}
+.brand-contact{font-size:12.5px;color:var(--muted);letter-spacing:.01em}
+.brand-contact a{color:var(--muted)}
+.brand-contact a:hover{color:var(--navy);text-decoration:none}
+.topnote{font-size:13px;color:var(--muted);letter-spacing:.02em}
+
+/* ---------- eyebrow ---------- */
+.eyebrow{
+  font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--accent);margin:0 0 18px;display:flex;align-items:center;gap:12px;
+}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
+
+/* ---------- hero ---------- */
+.hero{padding:96px 0 72px;border-bottom:1px solid var(--line)}
+.hero h1{
+  font-weight:800;letter-spacing:-.02em;line-height:1.04;
+  font-size:clamp(34px,5vw,54px);margin:0 0 22px;
+}
+.hero h1 .stroke{color:var(--navy)}
+.lede{font-size:clamp(20px,2.4vw,25px);max-width:30ch;color:var(--ink);margin:0 0 34px}
+.note-to{
+  border-left:3px solid var(--accent);
+  padding:14px 0 14px 22px;margin:34px 0 0;
+  max-width:60ch;color:var(--muted);font-size:18px;
+}
+.note-to strong{color:var(--ink);font-weight:500;font-style:italic}
+.contactline{margin-top:30px;font-family:"Bricolage Grotesque",sans-serif;font-size:14.5px;color:var(--muted);letter-spacing:.01em}
+.contactline a{color:var(--ink);border-bottom:1px solid var(--line)}
+.contactline a:hover{border-color:var(--navy);text-decoration:none}
+.sep{color:var(--line);margin:0 12px}
+
+/* ---------- generic section ---------- */
+section{padding:84px 0}
+.section-head{max-width:62ch;margin-bottom:52px}
+.section-head h2{font-weight:800;letter-spacing:-.02em;font-size:clamp(30px,4.4vw,44px);line-height:1.04;margin:0 0 14px}
+.section-head p{color:var(--muted);margin:0;font-size:20px}
+
+/* ---------- throughline band ---------- */
+.band{background:var(--navy-deep);color:#EAEFF7}
+.band .eyebrow{color:#A9C2E8}
+.band .eyebrow::before{background:#A9C2E8}
+.band h2{color:#fff}
+.band .big{
+  font-family:"Newsreader",serif;font-size:clamp(24px,3.4vw,34px);line-height:1.4;
+  max-width:46ch;margin:0;font-weight:400;
+}
+.band .big em{color:#A9C2E8;font-style:italic}
+
+/* ---------- timeline ---------- */
+.timeline{position:relative;margin-top:10px;padding-left:34px}
+.timeline::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--line)}
+.stop{position:relative;padding:0 0 42px}
+.stop:last-child{padding-bottom:0}
+.stop::before{
+  content:"";position:absolute;left:-34px;top:6px;width:16px;height:16px;border-radius:50%;
+  background:var(--paper);border:3px solid var(--navy);
+}
+.stop.now::before{background:var(--accent);border-color:var(--accent)}
+.stop .yr{font-family:"Bricolage Grotesque",sans-serif;font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--accent);text-transform:uppercase}
+.stop h3{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:22px;letter-spacing:-.01em;margin:4px 0 2px}
+.stop .org{font-style:italic;color:var(--muted);margin:0 0 8px;font-size:17px}
+.stop p{margin:0;max-width:58ch}
+
+/* ---------- crisis feature ---------- */
+.feature{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:clamp(30px,5vw,60px);position:relative;overflow:hidden}
+.feature::after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;background:var(--accent);opacity:.06}
+.feature .eyebrow{margin-bottom:14px}
+.feature h2{font-weight:800;letter-spacing:-.02em;font-size:clamp(28px,4vw,40px);margin:0 0 18px}
+.feature p{max-width:64ch;margin:0 0 16px}
+.feature p:last-child{margin-bottom:0}
+.pull{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;color:var(--navy);font-size:18px}
+
+/* ---------- work grid ---------- */
+.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+.card{
+  background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 30px 28px;
+  display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
+}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 44px -24px rgba(30,51,100,.30);border-color:var(--navy)}
+.tag{
+  font-family:"Bricolage Grotesque",sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--navy);background:rgba(30,51,100,.08);border-radius:100px;padding:5px 11px;align-self:flex-start;margin-bottom:14px;
+}
+.card h3{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em;margin:0 0 8px;color:var(--ink)}
+.card p{margin:0 0 18px;color:var(--muted);font-size:17px;flex:1}
+.card .go{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:14.5px;color:var(--navy);display:inline-flex;align-items:center;gap:7px}
+.card .go .arr{transition:transform .2s ease}
+.card:hover .go .arr{transform:translateX(4px)}
+.card.placeholder .go{color:var(--muted)}
+
+/* ---------- writing samples ---------- */
+.samples{display:flex;flex-direction:column}
+.sample{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:34px 0;border-top:1px solid var(--line);align-items:start}
+.sample:last-child{border-bottom:1px solid var(--line)}
+.sample .kind{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.sample .meta{font-size:13.5px;color:var(--muted);font-style:italic}
+.sample-body p{margin:0;font-size:17px}
+.sample-body p + p{margin-top:14px}
+
+/* ---------- close ---------- */
+.close{background:var(--navy-deep);color:#EAEFF7;text-align:left}
+.close h2{color:#fff;font-weight:800;letter-spacing:-.02em;font-size:clamp(30px,5vw,48px);margin:0 0 20px;max-width:18ch;line-height:1.02}
+.close p{max-width:54ch;color:#C9D3E8;margin:0 0 10px}
+.close .sign{font-family:"Newsreader",serif;font-style:italic;font-size:22px;color:#A9C2E8;margin-top:24px}
+.close .contactline{color:#93A6CC;margin-top:22px}
+.close .contactline a{color:#fff;border-color:rgba(255,255,255,.25)}
+.wink{font-size:14px;color:#8093BC;margin-top:30px;font-family:"Bricolage Grotesque",sans-serif}
+
+/* ---------- reveal animation ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- two-column layouts (balance the page) ---------- */
+.hero-grid{display:grid;grid-template-columns:1.5fr 1fr;gap:56px;align-items:start}
+.hero-main .lede{max-width:42ch}
+.hero-side .note-to{margin:0}
+.hero-side .contactline{margin-top:24px;line-height:2.1}
+.band-grid{display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:start}
+.road-grid{display:grid;grid-template-columns:300px 1fr;gap:60px;align-items:start}
+.road-grid .section-head{margin-bottom:0}
+.close-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+@media (max-width:860px){
+  .hero-grid,.band-grid,.road-grid,.close-grid{grid-template-columns:1fr;gap:30px}
+  .hero-side .note-to{margin-top:8px}
+}
+
+/* ---------- responsive ---------- */
+@media (max-width:780px){
+  body{font-size:18px}
+  .samples,.grid{grid-template-columns:1fr}
+  .sample{grid-template-columns:1fr;gap:14px;padding:26px 0}
+  .topnote{display:none}
+  section{padding:56px 0}
+  .hero{padding:60px 0 48px}
+}
+@media (prefers-reduced-motion:reduce){
+  .reveal{opacity:1;transform:none;transition:none}
+  html{scroll-behavior:auto}
+  .card:hover{transform:none}
+}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand-block">
+      <div class="brandmark">Jonathan Lass <span>/</span> for WECA</div>
+      <div class="brand-contact"><a href="mailto:jonathan.lass@me.com">jonathan.lass@me.com</a> &middot; 401-556-9349 &middot; <a href="https://linkedin.com/in/jonathanlass">linkedin.com/in/jonathanlass</a></div>
+    </div>
+    <div class="topnote">Marketing &amp; communications work samples</div>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<header class="hero">
+  <div class="wrap hero-grid">
+    <div class="hero-main">
+      <p class="eyebrow">Work samples &middot; Marketing, Communications &amp; Growth</p>
+      <h1>The right message, to the right people, on time.</h1>
+      <p class="lede">For a decade I have run communications for member organizations, mostly REALTOR&reg; associations, keeping members at the center of every message.</p>
+    </div>
+    <aside class="hero-side reveal">
+      <div class="note-to">
+        <strong>For the WECA team:</strong> you asked for samples that show my marketing, communications, digital, and content work. Rather than send a folder of files, I built them into a single page, on the theory that the work should speak for itself. Below is a selection, with the channel and audience noted for each.
+      </div>
+    </aside>
+  </div>
+</header>
+
+<!-- ============ THROUGHLINE BAND ============ -->
+<section class="band reveal">
+  <div class="wrap band-grid">
+    <p class="eyebrow">The throughline</p>
+    <p class="big">Nearly my whole career has been spent inside membership organizations, mostly REALTOR&reg; trade associations, doing the same core job: <em>holding the voice steady and keeping members at the center of it.</em></p>
+  </div>
+</section>
+
+<!-- ============ TIMELINE ============ -->
+<section>
+  <div class="wrap road-grid">
+    <div class="section-head">
+      <h2>The road here</h2>
+      <p>Four stops, one constant: communications in service of members.</p>
+    </div>
+    <div class="timeline">
+
+      <div class="stop reveal">
+        <div class="yr">2016 &ndash; 2021</div>
+        <h3>Digital Marketing Manager</h3>
+        <p class="org">Long Island Board of REALTORS&reg;</p>
+        <p>Communications lead for a regional REALTOR&reg; association serving thousands of members. Content, media outreach, and member communications, including the work below during the industry's hardest public moment.</p>
+      </div>
+
+      <div class="stop reveal">
+        <div class="yr">2021 &ndash; 2022</div>
+        <h3>Marketing Director</h3>
+        <p class="org">Intero Showcase Properties</p>
+        <p>Brand and communications for a residential real estate brokerage, producing public-facing campaigns and content in service of agents and their communities.</p>
+      </div>
+
+      <div class="stop reveal">
+        <div class="yr">2022 &ndash; 2024</div>
+        <h3>Digital Marketing Manager &rarr; Senior Manager</h3>
+        <p class="org">eXp Realty</p>
+        <p>Promoted within two years while leading communications and web across a global brokerage and its agent community, and building capability in-house rather than outsourcing it.</p>
+      </div>
+
+      <div class="stop now reveal">
+        <div class="yr">2024 &ndash; Present</div>
+        <h3>Director of Marketing &amp; Communications</h3>
+        <p class="org">Sacramento Association of REALTORS&reg;</p>
+        <p>Own the voice of a 7,000-member trade association across newsletters, email, social, press, and web. Built the communications function in-house after moving off an outside agency, and manage the small team that runs it.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CRISIS FEATURE: LONG ISLAND DIVIDED ============ -->
+<!-- ┌──────────────────────────────────────────────────────────────────────┐
+     │  EDIT THIS SECTION to match your actual role. The framing below is     │
+     │  deliberately honest and sober: this was a serious fair-housing        │
+     │  reckoning, not a PR "win." Keep that tone. Strengthen only to what     │
+     │  you genuinely did, and stay accurate. Remove if you'd rather not       │
+     │  feature it.                                                           │
+     └──────────────────────────────────────────────────────────────────────┘ -->
+<section>
+  <div class="wrap">
+    <div class="feature reveal">
+      <p class="eyebrow">Crisis communications</p>
+      <h2>Long Island Divided</h2>
+      <p>In 2019, Newsday published &ldquo;Long Island Divided,&rdquo; a three-year investigation into housing discrimination across Long Island's real estate industry. I was on the communications team at the Long Island Board of REALTORS&reg; through the difficult public reckoning that followed.</p>
+      <p>It remains the clearest lesson of my career in what high-stakes communication actually asks of you: <span class="pull">accuracy over speed, accountability over spin, and steady, honest messaging</span> to members and the public at a moment when saying nothing would have been the easier path.</p>
+      <p>That experience is a large part of why I think about a communications role the way your posting describes it: the right message, to the right audience, at the right time, told in a voice people can trust.</p>
+      <p style="margin-top:18px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px"><a href="https://projects.newsday.com/long-island/real-estate-investigation-videos/" target="_blank" rel="noopener">See Newsday&rsquo;s investigation &rarr;</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELECTED WORK ============ -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Selected work</h2>
+      <p>Public-facing communications, campaigns, and pages. A few links, a few things I designed and built.</p>
+    </div>
+    <div class="grid">
+
+      <!-- REAL LINK -->
+      <a class="card reveal" href="https://erin4car.com" target="_blank" rel="noopener">
+        <span class="tag">Campaign site &middot; Association leadership</span>
+        <h3>erin4car.com</h3>
+        <p>A full campaign web presence I designed and built for a candidate for California Association of REALTORS&reg; Treasurer: hero, platform, testimonials, advisory team, and a hardened email series.</p>
+        <span class="go">View the site <span class="arr">&rarr;</span></span>
+      </a>
+
+      <a class="card reveal" href="https://youtu.be/yU_g6rDh1N0" target="_blank" rel="noopener">
+        <span class="tag">Media relations &middot; Local TV</span>
+        <h3>Earned media coverage</h3>
+        <p>A segment with Sacramento&rsquo;s KCRA 3 on our Homebuyer Expo, focused on the down payment assistance grants we awarded to first-time buyers, earned television coverage that put the program in front of the families it was built to reach.</p>
+        <span class="go">Watch <span class="arr">&rarr;</span></span>
+      </a>
+
+      <a class="card reveal" href="https://sacrealtor.org/laughs26/" target="_blank" rel="noopener">
+        <span class="tag">Event landing page &middot; Members &amp; community</span>
+        <h3>Laughs for a Cause</h3>
+        <p>An event landing page I designed and built for a member comedy fundraiser: copy, design, and registration in a lighter, on-brand voice.</p>
+        <span class="go">View the page <span class="arr">&rarr;</span></span>
+      </a>
+
+      <a class="card reveal" href="https://sacrealtor.org/sacramento-housing-leaders-launch-down-payment-assistance-initiative-to-support-first-time-homebuyers/" target="_blank" rel="noopener">
+        <span class="tag">Press release &middot; Media &amp; public</span>
+        <h3>Down payment assistance launch</h3>
+        <p>A &ldquo;for immediate release&rdquo; announcing a down payment assistance initiative for first-time homebuyers, written for media pickup and public clarity.</p>
+        <span class="go">Read the release <span class="arr">&rarr;</span></span>
+      </a>
+
+      <!-- Weekly Docket newsletter, exported from Outlook to a standalone page -->
+      <a class="card reveal" href="docket.html" target="_blank" rel="noopener">
+        <span class="tag">Email / newsletter &middot; Members</span>
+        <h3>Weekly member newsletter</h3>
+        <p>The association&rsquo;s weekly Docket, rebuilt for reliable rendering across email clients with a streamlined production workflow. This is a live, sent edition.</p>
+        <span class="go">Open the newsletter <span class="arr">&rarr;</span></span>
+      </a>
+
+    </div>
+
+    <p style="max-width:66ch;margin-top:32px;color:var(--muted);font-size:16px;font-style:italic">On design: the graphics, layouts, and email templates across these pages, our website, the landing pages, and the weekly Docket, are produced in-house by me and one staffer. Not a design department, just an eye for it and the willingness to do the work.</p>
+  </div>
+</section>
+
+<!-- ============ WRITING SAMPLES ============ -->
+<!-- Replace the placeholder copy below with your real excerpts, or link out to the
+     full pieces. Keep the channel + audience label on each, as requested. -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Three writing samples</h2>
+      <p>One straight, one with a wink, one persuasive, each labeled by channel and audience, as requested.</p>
+    </div>
+    <div class="samples">
+
+      <div class="sample reveal">
+        <div class="sample-label">
+          <div class="kind">Straight</div>
+          <div class="meta">Channel: Press release &middot; Audience: Media &amp; public</div>
+        </div>
+        <div class="sample-body">
+          <p>FOR IMMEDIATE RELEASE. The Sacramento Association of REALTORS&reg;, in partnership with the National Hispanic Organization of Real Estate Associates and the Asian Real Estate Association of America, has launched a regional Down Payment Assistance Grant Program for first-time homebuyers, with an initial $75,000 in funding secured through the partnership.</p>
+          <p style="margin-top:14px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px"><a href="https://sacrealtor.org/sacramento-housing-leaders-launch-down-payment-assistance-initiative-to-support-first-time-homebuyers/" target="_blank" rel="noopener">Read the full release &rarr;</a></p>
+        </div>
+      </div>
+
+      <div class="sample reveal">
+        <div class="sample-label">
+          <div class="kind">With a wink</div>
+          <div class="meta">Channel: Event landing page &middot; Audience: Members &amp; community</div>
+        </div>
+        <div class="sample-body">
+          <p>Aloha. One of the most anticipated nights of the year is back: an evening of clean comedy, island vibes, and giving back. Open to all, and every laugh helps send local high school seniors to college. Grab your tickets and join us for a night you will not want to miss.</p>
+          <p style="margin-top:14px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px"><a href="https://sacrealtor.org/laughs26/" target="_blank" rel="noopener">View the page &rarr;</a></p>
+        </div>
+      </div>
+
+      <div class="sample reveal">
+        <div class="sample-label">
+          <div class="kind">Persuasive</div>
+          <div class="meta">Channel: Member email appeal &middot; Audience: REALTOR&reg; members</div>
+        </div>
+        <div class="sample-body">
+          <p>Every law that touches how you list, sell, and serve your clients starts as someone&rsquo;s idea in a committee room. The REALTOR&reg; Action Fund is how we make sure REALTORS&reg; are in that room. Your contribution, large or small, funds the advocacy that protects private property rights, pushes back on anti-housing policy, and keeps the path to homeownership open for the families you serve. It is one of the most direct investments you can make in your business and your community. Chip in today, and stand with the thousands of members who already have.</p>
+          <p style="margin-top:14px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px"><a href="https://sacrealtor.org/realtor-action-fund/" target="_blank" rel="noopener">About the Action Fund &rarr;</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSE ============ -->
+<section class="close">
+  <div class="wrap close-grid">
+    <h2>Members at the center. Voice on time.</h2>
+    <div class="close-body">
+      <p>That is the throughline, and it is the job as your role describes it. I would genuinely enjoy doing it for WECA.</p>
+      <p>Thanks for reading all the way down.</p>
+      <div class="sign">Jonathan</div>
+      <p class="contactline">
+        <a href="mailto:jonathan.lass@me.com">jonathan.lass@me.com</a> <span class="sep">&middot;</span>
+        401-556-9349 <span class="sep">&middot;</span>
+        <a href="https://linkedin.com/in/jonathanlass">linkedin.com/in/jonathanlass</a>
+      </p>
+      <p class="wink">Built and shipped by Thursday, 5pm ET. The trains run on time.</p>
+    </div>
+  </div>
+</section>
+
+<script>
+/* gentle scroll reveal, disabled when reduced motion is requested */
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var els = document.querySelectorAll('.reveal');
+  if(reduce || !('IntersectionObserver' in window)){
+    els.forEach(function(e){e.classList.add('in')});
+    return;
+  }
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(en){
+      if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target);}
+    });
+  },{threshold:.14});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script>
+</body>
+</html>
