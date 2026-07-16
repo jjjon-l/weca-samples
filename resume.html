@@ -1,0 +1,277 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Jonathan Lass — Resume</title>
+<meta name="description" content="Resume of Jonathan Lass, Marketing & Communications Leader." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F8FB;
+  --ink:#1B2A3A;
+  --navy:#034381;
+  --navy-deep:#022E58;
+  --accent:#F69D1D;
+  --muted:#5B6B7B;
+  --line:#E2E8F0;
+  --card:#FFFFFF;
+  --maxw:960px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Inter",-apple-system,"Segoe UI",Roboto,sans-serif;
+  font-size:17px;line-height:1.6;text-wrap:pretty;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3,.eyebrow{font-family:"Archivo","Helvetica Neue",Arial,sans-serif;}
+a{color:var(--navy);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 28px}
+
+/* top bar */
+.topbar{position:sticky;top:0;z-index:50;background:rgba(246,248,251,.88);backdrop-filter:saturate(140%) blur(8px);border-bottom:1px solid var(--line)}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:58px;padding-top:11px;padding-bottom:11px;gap:16px}
+.brandmark{font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:-.01em;font-size:16px}
+.brandmark span{color:var(--accent)}
+.topactions{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.btn{font-family:"Archivo",sans-serif;font-weight:600;font-size:13.5px;letter-spacing:.01em;border-radius:8px;padding:9px 16px;display:inline-flex;align-items:center;gap:7px;transition:transform .15s ease,box-shadow .2s ease,background .2s ease}
+.btn-ghost{color:var(--navy);border:1px solid var(--line);background:#fff}
+.btn-ghost:hover{border-color:var(--navy);text-decoration:none}
+.btn-amber{background:var(--accent);color:#3a2400;border:1px solid var(--accent)}
+.btn-amber:hover{transform:translateY(-1px);box-shadow:0 8px 20px -8px rgba(246,157,29,.6);text-decoration:none}
+
+/* header */
+.rhead{padding:56px 0 34px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--navy);margin:0 0 16px;display:flex;align-items:center;gap:12px}
+.eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
+.rhead h1{font-weight:800;letter-spacing:-.02em;font-size:clamp(36px,6vw,54px);margin:0 0 10px;line-height:1.02}
+.rhead .role{font-family:"Archivo",sans-serif;font-weight:500;font-size:clamp(16px,2.2vw,19px);color:var(--navy);margin:0 0 20px}
+.contact{display:flex;flex-wrap:wrap;gap:8px 20px;font-size:14.5px;color:var(--muted)}
+.contact a{color:var(--ink);border-bottom:1px solid var(--line)}
+.contact a:hover{border-color:var(--navy);text-decoration:none}
+
+/* sections */
+.sec{padding:38px 0;border-bottom:1px solid var(--line)}
+.sec:last-of-type{border-bottom:0}
+.sec-grid{display:grid;grid-template-columns:210px 1fr;gap:40px;align-items:start}
+.sec-label{font-family:"Archivo",sans-serif;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--navy)}
+.summary{font-size:18px;color:var(--ink)}
+
+/* experience */
+.role-block{margin-bottom:26px}
+.role-block:last-child{margin-bottom:0}
+.role-top{display:flex;justify-content:space-between;align-items:baseline;gap:16px;flex-wrap:wrap}
+.role-top .org{font-family:"Archivo",sans-serif;font-weight:700;font-size:18px;color:var(--ink)}
+.role-top .dates{font-family:"Archivo",sans-serif;font-weight:600;font-size:13px;color:var(--muted);white-space:nowrap}
+.role-title{font-weight:600;color:var(--navy);font-size:15.5px;margin:2px 0 8px}
+.role-sub{margin-top:2px}
+.role-intro{color:var(--muted);font-size:15px;margin:0 0 8px}
+ul.bul{margin:0;padding:0;list-style:none}
+ul.bul li{position:relative;padding-left:20px;margin-bottom:7px;font-size:15.5px}
+ul.bul li::before{content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.promo-note{color:var(--muted);font-size:14.5px;font-style:italic;margin:0 0 10px}
+.subrole{margin-top:12px}
+.subrole .sr-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap}
+.subrole .sr-title{font-weight:600;color:var(--navy);font-size:15px}
+.subrole .sr-dates{font-family:"Archivo",sans-serif;font-weight:600;font-size:12.5px;color:var(--muted)}
+
+/* competencies */
+.comp{display:grid;grid-template-columns:1fr 1fr;gap:8px 28px}
+.comp div{position:relative;padding-left:20px;font-size:15px}
+.comp div::before{content:"";position:absolute;left:0;top:8px;width:6px;height:6px;border-radius:50%;background:var(--navy)}
+
+/* education + skills */
+.edu-line{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.edu-line .deg{font-weight:600}
+.edu-line .school{color:var(--muted)}
+.subtle{color:var(--muted);font-size:14.5px;margin-top:4px}
+.skill-row{margin-bottom:9px;font-size:15px}
+.skill-row b{font-family:"Archivo",sans-serif;font-weight:600;color:var(--navy)}
+
+/* footer */
+.rfoot{background:var(--navy-deep);color:#EAEFF7;padding:44px 0;margin-top:0}
+.rfoot .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap}
+.rfoot .fcontact a{color:#fff;border-bottom:1px solid rgba(255,255,255,.28)}
+.rfoot .fcontact a:hover{text-decoration:none;border-color:var(--accent)}
+.rfoot .back{font-family:"Archivo",sans-serif;font-weight:600;font-size:14px;color:var(--accent)}
+
+@media (max-width:720px){
+  .sec-grid{grid-template-columns:1fr;gap:14px}
+  .comp{grid-template-columns:1fr}
+}
+:focus-visible{outline:3px solid var(--navy);outline-offset:3px;border-radius:2px}
+@media print{.topbar,.rfoot{display:none}body{background:#fff}}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brandmark">Jonathan Lass <span>/</span> Resume</div>
+    <div class="topactions">
+      <a class="btn btn-ghost" href="index.html">&larr; Work samples</a>
+      <a class="btn btn-amber" href="Jonathan_Lass_Resume.pdf" target="_blank" rel="noopener">Download PDF</a>
+    </div>
+  </div>
+</div>
+
+<header class="rhead">
+  <div class="wrap">
+    <p class="eyebrow">Resume</p>
+    <h1>Jonathan Lass</h1>
+    <p class="role">Marketing &amp; Communications Leader &nbsp;&middot;&nbsp; Association Marketing, Digital Performance &amp; Team Leadership</p>
+    <div class="contact">
+      <span>Davis, CA</span>
+      <a href="mailto:jonathan.lass@me.com">jonathan.lass@me.com</a>
+      <span>401-556-9349</span>
+      <a href="https://linkedin.com/in/jonathanlass" target="_blank" rel="noopener">linkedin.com/in/jonathanlass</a>
+    </div>
+  </div>
+</header>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <div class="sec-label">Summary</div>
+    <div>
+      <p class="summary">Hands-on senior marketing and communications leader with over a decade driving strategy and execution for professional trade and membership associations. Owns brand voice and executive-level messaging, leads multi-channel and digital campaigns with a strong analytics and conversion focus, and coaches small teams to ship polished, on-brand work. Skilled at translating programs, events, and education offerings into clear value propositions that grow engagement, participation, and revenue, with a build-it-in-house approach that keeps a lean team efficient.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <div class="sec-label">Experience</div>
+    <div>
+
+      <div class="role-block">
+        <div class="role-top">
+          <span class="org">Sacramento Association of REALTORS&reg;</span>
+          <span class="dates">March 2024 &ndash; Present</span>
+        </div>
+        <div class="role-title">Director of Marketing &amp; Communications &nbsp;&middot;&nbsp; Sacramento, CA</div>
+        <p class="role-intro">Lead integrated marketing and communications for a 7,000-member professional trade association, aligning strategy with member engagement, program growth, and revenue priorities.</p>
+        <ul class="bul">
+          <li>Own the association's brand voice and serve as quality gatekeeper for external communications, writing, editing, and reviewing executive-level messaging, press releases, and member content for clarity, tone, and accuracy.</li>
+          <li>Plan and execute multi-channel campaigns across web, email, social, and paid media, using Google Analytics and performance data to lift engagement and conversion; grew Instagram reach 57%, Facebook 30%, and engagement 42% within three months.</li>
+          <li>Rebuilt and manage the association website in WordPress, improving usability, content, and conversion, and instrumenting analytics to measure and report on digital performance.</li>
+          <li>Translate programs, events, and education offerings into clear value propositions for members and prospects, supporting participation and revenue across a 500+ attendee expo, fundraisers, and continuing-education events.</li>
+          <li>Coach staff and manage outside vendors, building the marketing function in-house after moving off an outside agency, which cut outside spend while improving output and consistency.</li>
+        </ul>
+      </div>
+
+      <div class="role-block">
+        <div class="role-top">
+          <span class="org">eXp Realty</span>
+          <span class="dates">February 2022 &ndash; March 2024</span>
+        </div>
+        <div class="role-title">Remote</div>
+        <p class="promo-note">Directed marketing, communications, and digital performance for a global real estate brokerage, advancing from Digital Marketing Manager to Senior Manager within two years.</p>
+        <div class="subrole">
+          <div class="sr-head">
+            <span class="sr-title">Senior Manager, Digital Marketing</span>
+            <span class="sr-dates">April 2023 &ndash; March 2024</span>
+          </div>
+          <ul class="bul">
+            <li>Led and coached a cross-functional team across 30+ web environments and 23 locations, managing priorities and timelines to an 84% on-time completion rate.</li>
+            <li>Directed brand voice and conversion strategy and built event and behavior tracking with Google Tag Manager, Hotjar, and Google Analytics to optimize conversion paths, growing lead capture 40%.</li>
+            <li>Reduced outside development costs by 60% by bringing work in-house, and built executive dashboards and reporting for C-level leadership.</li>
+          </ul>
+        </div>
+        <div class="subrole">
+          <div class="sr-head">
+            <span class="sr-title">Digital Marketing Manager</span>
+            <span class="sr-dates">February 2022 &ndash; April 2023</span>
+          </div>
+          <ul class="bul">
+            <li>Strengthened brand positioning across digital platforms and developed internal communications playbooks to standardize messaging across departments.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="role-block">
+        <div class="role-top">
+          <span class="org">Intero Showcase Properties</span>
+          <span class="dates">January 2021 &ndash; February 2022</span>
+        </div>
+        <div class="role-title">Marketing Director &nbsp;&middot;&nbsp; Vacaville, CA</div>
+        <ul class="bul">
+          <li>Directed brand and communications for a residential brokerage, producing multi-channel campaigns and coordinating vendors to support growth and community visibility.</li>
+        </ul>
+      </div>
+
+      <div class="role-block">
+        <div class="role-top">
+          <span class="org">Long Island Board of REALTORS&reg;</span>
+          <span class="dates">August 2016 &ndash; January 2021</span>
+        </div>
+        <div class="role-title">Digital Marketing Manager &nbsp;&middot;&nbsp; West Babylon, NY</div>
+        <p class="role-intro">Communications lead for a regional REALTOR&reg; association serving thousands of members.</p>
+        <ul class="bul">
+          <li>Led content, media outreach, and member communications, developing thought leadership around housing market data and growing website traffic by 30% through content and platform optimization.</li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <div class="sec-label">Core Competencies</div>
+    <div class="comp">
+      <div>Integrated Marketing Strategy</div>
+      <div>Team Leadership &amp; Coaching</div>
+      <div>Brand Voice &amp; Executive Messaging</div>
+      <div>Association &amp; Membership Marketing</div>
+      <div>Multi-Channel Campaigns (Email, Social, Paid)</div>
+      <div>Content &amp; Editorial Oversight</div>
+      <div>Website, SEO/SEM &amp; Digital Performance</div>
+      <div>Program &amp; Product-to-Market Positioning</div>
+      <div>Analytics &amp; Conversion (GA, GTM, Hotjar)</div>
+      <div>Media Relations &amp; Press</div>
+      <div>Project &amp; Workflow Management</div>
+      <div>Lean, In-House Operations</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <div class="sec-label">Education</div>
+    <div>
+      <div class="edu-line">
+        <span class="deg">Bachelor of Arts in Management</span>
+        <span class="school">Long Island University &ndash; C.W. Post</span>
+      </div>
+      <div class="subtle">Phi Eta Sigma National Honor Society &nbsp;|&nbsp; Dean&rsquo;s List</div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap sec-grid">
+    <div class="sec-label">Skills &amp; Certifications</div>
+    <div>
+      <div class="skill-row"><b>Digital &amp; Analytics:</b> Google Analytics, Google Tag Manager, Hotjar, Google Ads (SEO/SEM), HubSpot, Brevo, email marketing</div>
+      <div class="skill-row"><b>Web &amp; Creative:</b> WordPress, Elementor, HTML/CSS, Adobe Photoshop, Canva, Microsoft Office</div>
+      <div class="skill-row"><b>Certifications:</b> Google Ads Search &amp; Display (2022) &nbsp;|&nbsp; Google Data Analytics (2021) &nbsp;|&nbsp; HTML, CSS &amp; Web Design Circuit (2017)</div>
+    </div>
+  </div>
+</section>
+
+<footer class="rfoot">
+  <div class="wrap">
+    <div class="fcontact">
+      <a href="mailto:jonathan.lass@me.com">jonathan.lass@me.com</a> &nbsp;&middot;&nbsp; 401-556-9349 &nbsp;&middot;&nbsp;
+      <a href="https://linkedin.com/in/jonathanlass" target="_blank" rel="noopener">linkedin.com/in/jonathanlass</a>
+    </div>
+    <a class="back" href="index.html">Back to work samples &rarr;</a>
+  </div>
+</footer>
+
+</body>
+</html>
