@@ -7,7 +7,7 @@
 <meta name="description" content="Marketing, communications, digital, and content work samples and portfolio for the WECA Senior Manager, Marketing, Communications & Growth role." />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
 <style>
 /* ============================================================
    BRAND COLORS
@@ -15,13 +15,13 @@
    to match WECA's palette if desired.
    ============================================================ */
 :root{
-  --paper:#FBF8F2;        /* warm off-white background */
-  --ink:#1E2A44;          /* deep navy-charcoal text */
-  --navy:#1E3364;         /* primary navy */
-  --navy-deep:#152449;    /* darker navy for depth */
-  --accent:#C8102E;       /* true red accent, used only on light sections */
-  --muted:#5B6478;        /* secondary text */
-  --line:#EAE4D8;         /* hairline rules */
+  --paper:#F6F8FB;        /* clean, modern off-white */
+  --ink:#1B2A3A;          /* dark blue-charcoal text */
+  --navy:#034381;         /* WECA primary blue */
+  --navy-deep:#022E58;    /* deeper blue for dark sections */
+  --accent:#F69D1D;       /* WECA amber accent */
+  --muted:#5B6B7B;        /* secondary text */
+  --line:#E2E8F0;         /* hairline rules */
   --card:#FFFFFF;         /* card surface */
   --maxw:1080px;
 }
@@ -32,13 +32,13 @@ body{
   margin:0;
   background:var(--paper);
   color:var(--ink);
-  font-family:"Newsreader",Georgia,serif;
+  font-family:"Inter",-apple-system,"Segoe UI",Roboto,sans-serif;
   font-size:19px;
   line-height:1.6;
   text-wrap:pretty;
   -webkit-font-smoothing:antialiased;
 }
-h1,h2,h3,.display,.eyebrow{font-family:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;}
+h1,h2,h3,.display,.eyebrow{font-family:"Archivo","Helvetica Neue",Arial,sans-serif;}
 h1,h2,h3,.lede,.big{text-wrap:balance;}
 a{color:var(--navy);text-decoration:none}
 a:hover{text-decoration:underline}
@@ -49,13 +49,13 @@ img{max-width:100%;display:block}
 /* ---------- top bar ---------- */
 .topbar{
   position:sticky;top:0;z-index:50;
-  background:rgba(251,248,242,.86);
+  background:rgba(246,248,251,.86);
   backdrop-filter:saturate(140%) blur(8px);
   border-bottom:1px solid var(--line);
 }
 .topbar .wrap{display:flex;align-items:center;justify-content:space-between;min-height:58px;padding-top:11px;padding-bottom:11px}
 .brand-block{display:flex;flex-direction:column;gap:3px}
-.brandmark{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;letter-spacing:-.01em;font-size:16px}
+.brandmark{font-family:"Archivo",sans-serif;font-weight:800;letter-spacing:-.01em;font-size:16px}
 .brandmark span{color:var(--accent)}
 .brand-contact{font-size:12.5px;color:var(--muted);letter-spacing:.01em}
 .brand-contact a{color:var(--muted)}
@@ -65,7 +65,7 @@ img{max-width:100%;display:block}
 /* ---------- eyebrow ---------- */
 .eyebrow{
   font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
-  color:var(--accent);margin:0 0 18px;display:flex;align-items:center;gap:12px;
+  color:var(--navy);margin:0 0 18px;display:flex;align-items:center;gap:12px;
 }
 .eyebrow::before{content:"";width:26px;height:2px;background:var(--accent);display:inline-block}
 
@@ -83,7 +83,7 @@ img{max-width:100%;display:block}
   max-width:60ch;color:var(--muted);font-size:18px;
 }
 .note-to strong{color:var(--ink);font-weight:500;font-style:italic}
-.contactline{margin-top:30px;font-family:"Bricolage Grotesque",sans-serif;font-size:14.5px;color:var(--muted);letter-spacing:.01em}
+.contactline{margin-top:30px;font-family:"Archivo",sans-serif;font-size:14.5px;color:var(--muted);letter-spacing:.01em}
 .contactline a{color:var(--ink);border-bottom:1px solid var(--line)}
 .contactline a:hover{border-color:var(--navy);text-decoration:none}
 .sep{color:var(--line);margin:0 12px}
@@ -96,14 +96,14 @@ section{padding:84px 0}
 
 /* ---------- throughline band ---------- */
 .band{background:var(--navy-deep);color:#EAEFF7}
-.band .eyebrow{color:#A9C2E8}
-.band .eyebrow::before{background:#A9C2E8}
+.band .eyebrow{color:var(--accent)}
+.band .eyebrow::before{background:var(--accent)}
 .band h2{color:#fff}
 .band .big{
-  font-family:"Newsreader",serif;font-size:clamp(24px,3.4vw,34px);line-height:1.4;
+  font-family:"Inter",sans-serif;font-size:clamp(24px,3.4vw,34px);line-height:1.4;
   max-width:46ch;margin:0;font-weight:400;
 }
-.band .big em{color:#A9C2E8;font-style:italic}
+.band .big em{color:var(--accent);font-style:normal;font-weight:600}
 
 /* ---------- timeline ---------- */
 .timeline{position:relative;margin-top:10px;padding-left:34px}
@@ -115,8 +115,8 @@ section{padding:84px 0}
   background:var(--paper);border:3px solid var(--navy);
 }
 .stop.now::before{background:var(--accent);border-color:var(--accent)}
-.stop .yr{font-family:"Bricolage Grotesque",sans-serif;font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--accent);text-transform:uppercase}
-.stop h3{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:22px;letter-spacing:-.01em;margin:4px 0 2px}
+.stop .yr{font-family:"Archivo",sans-serif;font-size:13px;font-weight:600;letter-spacing:.04em;color:var(--navy);text-transform:uppercase}
+.stop h3{font-family:"Archivo",sans-serif;font-weight:800;font-size:22px;letter-spacing:-.01em;margin:4px 0 2px}
 .stop .org{font-style:italic;color:var(--muted);margin:0 0 8px;font-size:17px}
 .stop p{margin:0;max-width:58ch}
 
@@ -127,7 +127,7 @@ section{padding:84px 0}
 .feature h2{font-weight:800;letter-spacing:-.02em;font-size:clamp(28px,4vw,40px);margin:0 0 18px}
 .feature p{max-width:64ch;margin:0 0 16px}
 .feature p:last-child{margin-bottom:0}
-.pull{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;color:var(--navy);font-size:18px}
+.pull{font-family:"Archivo",sans-serif;font-weight:600;color:var(--navy);font-size:18px}
 
 /* ---------- work grid ---------- */
 .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
@@ -135,14 +135,14 @@ section{padding:84px 0}
   background:var(--card);border:1px solid var(--line);border-radius:12px;padding:30px 30px 28px;
   display:flex;flex-direction:column;transition:transform .25s ease,box-shadow .25s ease,border-color .25s ease;
 }
-.card:hover{transform:translateY(-4px);box-shadow:0 20px 44px -24px rgba(30,51,100,.30);border-color:var(--navy)}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 44px -24px rgba(3,67,129,.28);border-color:var(--navy)}
 .tag{
-  font-family:"Bricolage Grotesque",sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
-  color:var(--navy);background:rgba(30,51,100,.08);border-radius:100px;padding:5px 11px;align-self:flex-start;margin-bottom:14px;
+  font-family:"Archivo",sans-serif;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;
+  color:var(--navy);background:rgba(3,67,129,.07);border-radius:100px;padding:5px 11px;align-self:flex-start;margin-bottom:14px;
 }
-.card h3{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em;margin:0 0 8px;color:var(--ink)}
+.card h3{font-family:"Archivo",sans-serif;font-weight:800;font-size:21px;letter-spacing:-.01em;margin:0 0 8px;color:var(--ink)}
 .card p{margin:0 0 18px;color:var(--muted);font-size:17px;flex:1}
-.card .go{font-family:"Bricolage Grotesque",sans-serif;font-weight:600;font-size:14.5px;color:var(--navy);display:inline-flex;align-items:center;gap:7px}
+.card .go{font-family:"Archivo",sans-serif;font-weight:600;font-size:14.5px;color:var(--navy);display:inline-flex;align-items:center;gap:7px}
 .card .go .arr{transition:transform .2s ease}
 .card:hover .go .arr{transform:translateX(4px)}
 .card.placeholder .go{color:var(--muted)}
@@ -151,7 +151,7 @@ section{padding:84px 0}
 .samples{display:flex;flex-direction:column}
 .sample{display:grid;grid-template-columns:240px 1fr;gap:52px;padding:34px 0;border-top:1px solid var(--line);align-items:start}
 .sample:last-child{border-bottom:1px solid var(--line)}
-.sample .kind{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+.sample .kind{font-family:"Archivo",sans-serif;font-weight:800;font-size:14px;letter-spacing:.06em;text-transform:uppercase;color:var(--navy);margin-bottom:8px}
 .sample .meta{font-size:13.5px;color:var(--muted);font-style:italic}
 .sample-body p{margin:0;font-size:17px}
 .sample-body p + p{margin-top:14px}
@@ -160,10 +160,10 @@ section{padding:84px 0}
 .close{background:var(--navy-deep);color:#EAEFF7;text-align:left}
 .close h2{color:#fff;font-weight:800;letter-spacing:-.02em;font-size:clamp(30px,5vw,48px);margin:0 0 20px;max-width:18ch;line-height:1.02}
 .close p{max-width:54ch;color:#C9D3E8;margin:0 0 10px}
-.close .sign{font-family:"Newsreader",serif;font-style:italic;font-size:22px;color:#A9C2E8;margin-top:24px}
+.close .sign{font-family:"Inter",sans-serif;font-weight:600;font-size:22px;color:var(--accent);margin-top:24px}
 .close .contactline{color:#93A6CC;margin-top:22px}
 .close .contactline a{color:#fff;border-color:rgba(255,255,255,.25)}
-.wink{font-size:14px;color:#8093BC;margin-top:30px;font-family:"Bricolage Grotesque",sans-serif}
+.wink{font-size:14px;color:#8093BC;margin-top:30px;font-family:"Archivo",sans-serif}
 
 /* ---------- reveal animation ---------- */
 .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease,transform .7s ease}
@@ -197,7 +197,7 @@ section{padding:84px 0}
   html{scroll-behavior:auto}
   .card:hover{transform:none}
 }
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+:focus-visible{outline:3px solid var(--navy);outline-offset:3px;border-radius:2px}
 </style>
 </head>
 <body>
@@ -293,7 +293,7 @@ section{padding:84px 0}
       <p>In 2019, Newsday published &ldquo;Long Island Divided,&rdquo; a three-year investigation into housing discrimination across Long Island's real estate industry. I was on the communications team at the Long Island Board of REALTORS&reg; through the difficult public reckoning that followed.</p>
       <p>It remains the clearest lesson of my career in what high-stakes communication actually asks of you: <span class="pull">accuracy over speed, accountability over spin, and steady, honest messaging</span> to members and the public at a moment when saying nothing would have been the easier path.</p>
       <p>That experience is a large part of why I think about a communications role the way your posting describes it: the right message, to the right audience, at the right time, told in a voice people can trust.</p>
-      <p style="margin-top:18px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px"><a href="https://projects.newsday.com/long-island/real-estate-investigation-videos/" target="_blank" rel="noopener">See Newsday&rsquo;s investigation &rarr;</a></p>
+      <p style="margin-top:18px;font-family:'Archivo',sans-serif;font-size:14px"><a href="https://projects.newsday.com/long-island/real-estate-investigation-videos/" target="_blank" rel="noopener">See Newsday&rsquo;s investigation &rarr;</a></p>
     </div>
   </div>
 </section>
@@ -351,46 +351,34 @@ section{padding:84px 0}
 </section>
 
 <!-- ============ WRITING SAMPLES ============ -->
-<!-- Replace the placeholder copy below with your real excerpts, or link out to the
-     full pieces. Keep the channel + audience label on each, as requested. -->
+<!-- Writing samples, each labeled by channel and audience. -->
 <section>
   <div class="wrap">
     <div class="section-head">
-      <h2>Three writing samples</h2>
-      <p>One straight, one with a wink, one persuasive, each labeled by channel and audience, as requested.</p>
+      <h2>Writing samples</h2>
+      <p>A few pieces across channels, each labeled by channel and audience.</p>
     </div>
     <div class="samples">
 
       <div class="sample reveal">
         <div class="sample-label">
-          <div class="kind">Straight</div>
+          <div class="kind">News writing</div>
           <div class="meta">Channel: Press release &middot; Audience: Media &amp; public</div>
         </div>
         <div class="sample-body">
           <p>FOR IMMEDIATE RELEASE. The Sacramento Association of REALTORS&reg;, in partnership with the National Hispanic Organization of Real Estate Associates and the Asian Real Estate Association of America, has launched a regional Down Payment Assistance Grant Program for first-time homebuyers, with an initial $75,000 in funding secured through the partnership.</p>
-          <p style="margin-top:14px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px"><a href="https://sacrealtor.org/sacramento-housing-leaders-launch-down-payment-assistance-initiative-to-support-first-time-homebuyers/" target="_blank" rel="noopener">Read the full release &rarr;</a></p>
+          <p style="margin-top:14px;font-family:'Archivo',sans-serif;font-size:14px"><a href="https://sacrealtor.org/sacramento-housing-leaders-launch-down-payment-assistance-initiative-to-support-first-time-homebuyers/" target="_blank" rel="noopener">Read the full release &rarr;</a></p>
         </div>
       </div>
 
       <div class="sample reveal">
         <div class="sample-label">
-          <div class="kind">With a wink</div>
-          <div class="meta">Channel: Event landing page &middot; Audience: Members &amp; community</div>
-        </div>
-        <div class="sample-body">
-          <p>Aloha. One of the most anticipated nights of the year is back: an evening of clean comedy, island vibes, and giving back. Open to all, and every laugh helps send local high school seniors to college. Grab your tickets and join us for a night you will not want to miss.</p>
-          <p style="margin-top:14px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px"><a href="https://sacrealtor.org/laughs26/" target="_blank" rel="noopener">View the page &rarr;</a></p>
-        </div>
-      </div>
-
-      <div class="sample reveal">
-        <div class="sample-label">
-          <div class="kind">Persuasive</div>
-          <div class="meta">Channel: Member email appeal &middot; Audience: REALTOR&reg; members</div>
+          <div class="kind">Persuasive writing</div>
+          <div class="meta">Channel: Member email appeal &middot; Audience: Members</div>
         </div>
         <div class="sample-body">
           <p>Every law that touches how you list, sell, and serve your clients starts as someone&rsquo;s idea in a committee room. The REALTOR&reg; Action Fund is how we make sure REALTORS&reg; are in that room. Your contribution, large or small, funds the advocacy that protects private property rights, pushes back on anti-housing policy, and keeps the path to homeownership open for the families you serve. It is one of the most direct investments you can make in your business and your community. Chip in today, and stand with the thousands of members who already have.</p>
-          <p style="margin-top:14px;font-family:'Bricolage Grotesque',sans-serif;font-size:14px"><a href="https://sacrealtor.org/realtor-action-fund/" target="_blank" rel="noopener">About the Action Fund &rarr;</a></p>
+          <p style="margin-top:14px;font-family:'Archivo',sans-serif;font-size:14px"><a href="https://sacrealtor.org/realtor-action-fund/" target="_blank" rel="noopener">About the Action Fund &rarr;</a></p>
         </div>
       </div>
 
@@ -411,7 +399,7 @@ section{padding:84px 0}
         401-556-9349 <span class="sep">&middot;</span>
         <a href="https://linkedin.com/in/jonathanlass">linkedin.com/in/jonathanlass</a>
       </p>
-      <p class="wink">Built and shipped by Thursday, 5pm ET. The trains run on time.</p>
+      <p class="wink">Designed and built by Jonathan Lass.</p>
     </div>
   </div>
 </section>
